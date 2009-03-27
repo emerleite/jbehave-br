@@ -1,4 +1,4 @@
-VERSION_NUMBER = "1.0.0"
+VERSION_NUMBER = "1.0.1"
 GROUP = "codificando.com"
 COPYRIGHT = "Emerson Macedo - codificando.com (c) 2009"
 
