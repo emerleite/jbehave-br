@@ -1,0 +1,44 @@
+= jbehave-br
+
+http://github.com/emerleite/jbehave-br
+
+== Descrição
+
+Esse Projeto tem por objetivo permitir usar o Jbehave 2 com o idioma português do Brasil.
+
+== Pré-requisitos
+
+* Java 1.5
+* Jbehave 2.x
+
+== Instalação
+
+   Para construir o projeto a partir do fonte é necessário o ruby instalado e o buildr - http://buildr.apache.org
+    - sudo env JAVA_HOME=$JAVA_HOME gem install buildr
+   
+   Após instalar proceder da seguinte forma:
+
+   - git clone git://github.com/emerleite/jbehave-br.git
+   - cd jbehave-br
+   - buildr package
+
+   Adicione o jar será gerado em target/jbehave-br-VERSION.jar ao classpath da sua aplicação.
+
+== Utilização
+
+   Ao criar as especificações do Jbehave proceda da seguinte forma:
+   - Arquivos texto com a extensão .cenario - Ex: cadastro_valido.cenario
+   - Estender de PtBRScenario ao invés de Scenario.
+   - Estebder de PtBRSteps ao invés de Steps.
+   - Arquivo texto deve estar no mesmo pacote que a classe do Scenario.
+   - No arquivo.cenario utilizar as palavras Cenário, Dado, Quando, Então, E.
+
+   Mais detalhes olhar os testes em src/test/java e src/test/resources.
+
+== Licença
+
+Veja o arquivo LICENSE.txt para detalhes.
+
+
+
+
