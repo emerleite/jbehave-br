@@ -1,4 +1,4 @@
 TODO LIST
 =========
 
-- Criar annotations Dado Quando Entao para ser usado no lugar de GIven, When, Then
+- Criar annotations Dado, Quando, Entao para ser usado no lugar de Given, When, Then
