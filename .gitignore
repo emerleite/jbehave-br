@@ -3,4 +3,5 @@ dist
 .project
 target
 reports
+.settings/**
 *~
