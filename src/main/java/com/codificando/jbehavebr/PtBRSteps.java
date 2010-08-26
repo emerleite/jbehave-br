@@ -1,10 +1,20 @@
 package com.codificando.jbehavebr;
 
-import org.jbehave.scenario.steps.CandidateSteps;
-import org.jbehave.scenario.steps.Steps;
+import java.util.Locale;
 
-public class PtBRSteps extends Steps implements CandidateSteps {
-	public PtBRSteps() {
-		super("Dado", "Quando", "Então", "E");
+import org.jbehave.scenario.definition.KeyWords;
+import org.jbehave.scenario.i18n.I18nKeyWords;
+import org.jbehave.scenario.i18n.StringEncoder;
+import org.jbehave.scenario.steps.Steps;
+import org.jbehave.scenario.steps.StepsConfiguration;
+
+public class PtBRSteps extends Steps {
+	
+	public PtBRSteps () {
+		super(new StepsConfiguration(keywordsFor(new Locale("pt"), Steps.class.getClassLoader())));
 	}
+	
+	protected static KeyWords keywordsFor(Locale locale, ClassLoader classLoader) {
+        return new I18nKeyWords(locale, new StringEncoder(), "com/codificando/jbehavebr/keywords", classLoader);
+    }	
 }
