@@ -10,7 +10,13 @@ public class ComportamentoTesteSteps extends PtBRSteps {
  
     @When("eu usar o meu idioma")
     public void verificaTamanho() {}
- 
-    @Then("tudo deve funcionar perfeitamente")
-    public void erroUploadContentType() {}
+
+    @When("estiver testando")
+    public void eEstiverTestando() {}    
+    
+    @Then("tudo deve funcionar")
+    public void tudoDeveFuncionar() {}
+
+    @Then("eu sou feliz")
+    public void eSouFeliz() {}
 }
