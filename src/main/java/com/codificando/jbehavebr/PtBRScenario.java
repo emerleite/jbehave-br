@@ -26,7 +26,7 @@ public class PtBRScenario extends JUnitScenario {
 			@Override
             public ScenarioDefiner forDefiningScenarios() {
                 return new ClasspathScenarioDefiner(
-                        new UnderscoredCamelCaseResolver(".spec"),
+                        new UnderscoredCamelCaseResolver(".feature"),
                         new PatternScenarioParser(this), classLoader);
             }
  
